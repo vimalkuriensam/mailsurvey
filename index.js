@@ -10,6 +10,7 @@ const apiRoute = require("./routes/apiRoutes");
 
 const port = process.env.PORT;
 const app = express();
+app.enable("trust proxy");
 
 app.use(
   cookieSession({
