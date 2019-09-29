@@ -5,6 +5,10 @@ userSchema = new mongoose.Schema({
     type: String,
     unique: true,
     required: true
+  },
+  credits: {
+    type: Number,
+    default: 0
   }
 });
 

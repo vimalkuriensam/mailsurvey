@@ -8,7 +8,7 @@ apiRouter.get("/current_user", (req, res) => {
 
 apiRouter.get("/logout", (req, res) => {
   req.logout();
-  res.send(req.user);
+  res.redirect("/");
 });
 
 module.exports = apiRouter;
